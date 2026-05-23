@@ -1,4 +1,5 @@
 import time
+
 import streamlit as st
 from src.ui.style_base_layout import style_background_dashboard, style_base_layout
 from src.components.header import header_dashboard
@@ -52,7 +53,7 @@ def student_dashboard():
 
         stats_map[sid]['total'] +=1
 
-        if log.get('is_present'):
+        if log.get('isPresent'):
             stats_map[sid]['attended'] += 1
 
 
@@ -172,7 +173,6 @@ def student_screen():
                                 st.session_state.user_role = 'student'
                                 st.session_state.student_data = response_data[0]
                                 st.toast(f'Profile Created! Hi {new_name}!')
-                                
                                 time.sleep(1)
                                 st.rerun()
                         else:
