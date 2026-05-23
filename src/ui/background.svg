@@ -1,0 +1,70 @@
+# AI Attendance App SVG Background Icon
+
+```svg
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="200" y1="150" x2="600" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" rx="40" fill="url(#bg)"/>
+
+  <!-- Outer Glow Circle -->
+  <circle cx="400" cy="400" r="250" fill="url(#accent)" opacity="0.12"/>
+
+  <!-- Face Scan Frame -->
+  <rect x="240" y="180" width="320" height="360" rx="28"
+        stroke="url(#accent)" stroke-width="10"/>
+
+  <!-- Face -->
+  <circle cx="400" cy="310" r="70" stroke="white" stroke-width="10"/>
+  <path d="M300 470C330 420 470 420 500 470"
+        stroke="white" stroke-width="10"
+        stroke-linecap="round"/>
+
+  <!-- Voice Waves -->
+  <path d="M590 310C620 340 620 390 590 420"
+        stroke="#38BDF8"
+        stroke-width="10"
+        stroke-linecap="round"/>
+
+  <path d="M640 270C690 330 690 400 640 460"
+        stroke="#8B5CF6"
+        stroke-width="10"
+        stroke-linecap="round"/>
+
+  <!-- AI Nodes -->
+  <circle cx="250" cy="240" r="10" fill="#38BDF8"/>
+  <circle cx="550" cy="240" r="10" fill="#8B5CF6"/>
+  <circle cx="250" cy="500" r="10" fill="#38BDF8"/>
+  <circle cx="550" cy="500" r="10" fill="#8B5CF6"/>
+
+  <line x1="250" y1="240" x2="320" y2="280" stroke="#38BDF8" stroke-width="4"/>
+  <line x1="550" y1="240" x2="480" y2="280" stroke="#8B5CF6" stroke-width="4"/>
+  <line x1="250" y1="500" x2="320" y2="430" stroke="#38BDF8" stroke-width="4"/>
+  <line x1="550" y1="500" x2="480" y2="430" stroke="#8B5CF6" stroke-width="4"/>
+
+  <!-- Attendance Tick -->
+  <circle cx="620" cy="620" r="60" fill="#10B981"/>
+  <path d="M590 620L610 640L650 600"
+        stroke="white"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+```
+
+You can:
+
+* Save this as `background.svg`
+* Use it in Streamlit with `st.image()`
+* Edit colors easily for dark/light themes
+* Use it as login page background or app logo base
