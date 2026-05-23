@@ -1,7 +1,7 @@
 import streamlit as st
 from src.database.db import enroll_student_to_subject
 from src.database.config import supabase
-
+import trackback
 import time
  
 
@@ -28,7 +28,9 @@ def show_attendance_result(df, logs):
                 st.session_state.voice_attendance_results = None
                 st.rerun()
             except Exception as e:
-                 st.error(f'Sync failed: {e}')
+                st.error(f"Error: {e}")
+
+                st.code(traceback.format_exc())
 
 
 
