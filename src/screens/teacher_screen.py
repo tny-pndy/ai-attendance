@@ -156,23 +156,23 @@ def teacher_tab_take_attendance():
                     for node in enrolled_students:
                         student = node['students']
                         sources = all_detected_ids.get(int(student['student_id']), [])
-                        isPresent= len(sources) > 0
+                        ispresent= len(sources) > 0
   
                         results.append({
                             "Name": student['name'],
                             "ID": student['student_id'],
-                            "Source": ", ".join(sources) if isPresent else "-",
-                            "Status": "✅ Present" if isPresent else "❌ Absent"
+                            "Source": ", ".join(sources) if ispresent else "-",
+                            "Status": "✅ Present" if ispresent else "❌ Absent"
                         })
 
                         attendance_to_log.append({
                             'student_id': student['student_id'],
                             'subject_id': selected_subject_id,
                             'timestamp': current_timestamp,
-                            'isPresent': bool(isPresent)
+                            'ispresent': bool(ispresent)
                         })
 
-                attendance_result_dialog(pd.DataFrame(results), attendance_to_log)
+                    attendance_result_dialog(pd.DataFrame(results), attendance_to_log)
 
     with c3:
         if st.button('Use Voice Attendance', type='primary', width='stretch', icon=':material/mic:'):
@@ -233,7 +233,7 @@ def teacher_tab_attendance_records():
             "Time": datetime.fromisoformat(ts).strftime("%Y-%m-%d %I:%M %p") if ts else "N'A",
             "Subject": r['subjects']['name'],
             "Subject Code":r['subjects']['subject_code'],
-            "isPresent": bool(r.get('isPresent', False))
+            "ispresent": bool(r.get('ispresent', False))
         })
 
 
@@ -244,14 +244,14 @@ def teacher_tab_attendance_records():
     summary = (
         df.groupby(['ts_group', 'Time', 'Subject', 'Subject Code'])
         .agg(
-             isPresent = ('isPresent', 'sum'),
-            Total_Count =('isPresent', 'count')
+             ispresent = ('ispresent', 'sum'),
+            Total_Count =('ispresent', 'count')
         ).reset_index()
 
     )
 
     summary['Attendance Stats'] = (
-        "✅ " + summary['isPresent'].astype(str) + " /"
+        "✅ " + summary['ispresent'].astype(str) + " /"
         + summary['Total_Count'].astype(str) + ' Students'
     )
 
