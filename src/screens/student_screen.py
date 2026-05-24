@@ -53,7 +53,7 @@ def student_dashboard():
 
         stats_map[sid]['total'] +=1
 
-        if log.get('isPresent'):
+        if log.get('ispresent'):
             stats_map[sid]['attended'] += 1
 
 
@@ -65,7 +65,7 @@ def student_dashboard():
 
         stats = stats_map.get(sid,{"total":0, "attended": 0} )
         def unenroll_button():
-                if st.button("Unenroll from tihs course", type='tertiary', width='stretch', icon=':material/delete_forever:'):
+                if st.button("Unenroll from this course", type='tertiary', width='stretch', icon=':material/delete_forever:'):
                     unenroll_student_to_subject(student_id, sid)
                     st.toast(f'Unenrolled from {sub['name']} successfully!')
                     st.rerun()
@@ -173,6 +173,7 @@ def student_screen():
                                 st.session_state.user_role = 'student'
                                 st.session_state.student_data = response_data[0]
                                 st.toast(f'Profile Created! Hi {new_name}!')
+                                import time
                                 time.sleep(1)
                                 st.rerun()
                         else:
