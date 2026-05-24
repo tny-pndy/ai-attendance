@@ -47,20 +47,20 @@ def voice_attendance_dialog(selected_subject_id):
             for node in enrolled_students:
                 student = node['students']
                 score  = detected_scores.get(student['student_id'], 0.0)
-                isPresent= bool(score>0)
+                ispresent= bool(score>0)
 
                 results.append({
                     "Name": student['name'],
                     "ID": student['student_id'],
-                    "Source": score if isPresent else "-",
-                    "Status": "✅ Present" if isPresent else "❌ Absent"
+                    "Source": score if ispresent else "-",
+                    "Status": "✅ Present" if ispresent else "❌ Absent"
                 })
 
                 attendance_to_log.append({
                     'student_id': student['student_id'],
                     'subject_id': selected_subject_id,
                     'timestamp': current_timestamp,
-                    'isPresent': bool(isPresent)
+                    'ispresent': bool(ispresent)
                 })
             st.session_state.voice_attendance_results = (pd.DataFrame(results), attendance_to_log)
 
