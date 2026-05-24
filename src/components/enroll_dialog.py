@@ -23,6 +23,7 @@ def enroll_dialog():
                 else:
                     enroll_student_to_subject(student_id, subject['subject_id'])
                     st.success('Succesfully enrolled!')
+                    import time
                     time.sleep(1)
                     st.rerun()
         else:
