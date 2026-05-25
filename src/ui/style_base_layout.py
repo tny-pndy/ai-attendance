@@ -10,18 +10,14 @@ def style_background_home():
     #0f0c29 0%,
     #302b63 45%,
     #24243e 100%
-    
     );
                 }
-               
 
                 .stApp div[data-testid="stColumn"]{
                     background-color:#E0E3FF !important;
                     padding:2.5rem !important;
                     border-radius: 5rem !important;
-                 
                     }
-                    
         </style>  
 
                 """
@@ -38,9 +34,7 @@ def style_background_dashboard():
 
                 .stApp {
                   background: linear-gradient(135deg, #E0EAFC, #CFDEF3) !important;
-                  
                 }
-               
 
         </style>  
 
@@ -62,123 +56,58 @@ def style_base_layout():
                 
             .block-container {
                 padding-top:1.5rem !important;    
-               
             }
 
             h1 {
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 4.5rem !important;
-    line-height: 1.1 !important;
-    margin-bottom: 0rem !important;
-    font-weight: 900 !important;
-}
+                font-family:  'Poppins' !important;
+                font-size: 4.5rem !important;
+                line-height:1.1 !important;
+                margin-bottom:0rem !important;
+                font-weight: 900 !important;
+            }
+                
 
-h2 {
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 2rem !important;
-    line-height: 0.9 !important;
-    margin-bottom: 0rem !important;
+            h2 {
+                font-family: 'Climate Crisis', sans-serif !important;
+                font-size: 2rem !important;
+                line-height:0.9 !important;
+                margin-bottom:0rem !important;
+            }
+                
+            h3, h4, p {
+                font-family: 'Outfit', sans-serif;    
+            }
+                
 
-    color: black !important;
-    -webkit-text-fill-color: black !important;
-}
+            button{
+                border-radius: 1.5rem !important;
+                background-color: #5865F2 !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25s ease-in-out !important;
+                }
 
-h3,
-h4,
-p {
-    font-family: 'Poppins', sans-serif !important;
+            button[kind="secondary"]{
+                border-radius: 1.5rem !important;
+                background-color: #EB459E !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25s ease-in-out !important;
+                }
 
-    color: black !important;
-    -webkit-text-fill-color: black !important;
-}
+            button[kind="tertiary"]{
+                border-radius: 1.5rem !important;
+                background-color: black !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25s ease-in-out !important;
+                }
 
-
-/* =========================
-   PRIMARY BUTTON
-========================= */
-
-.stButton > button {
-    border-radius: 1.5rem !important;
-    background-color: #5865F2 !important;
-
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-
-    padding: 10px 20px !important;
-
-    border: none !important;
-
-    transition: all 0.25s ease-in-out !important;
-}
-
-
-/* =========================
-   SECONDARY BUTTON
-========================= */
-
-button[kind="secondary"] {
-    border-radius: 1.5rem !important;
-    background-color: #EB459E !important;
-
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-
-    padding: 10px 20px !important;
-
-    border: none !important;
-
-    transition: all 0.25s ease-in-out !important;
-}
-
-
-/* =========================
-   TERTIARY BUTTON
-========================= */
-
-button[kind="tertiary"] {
-    border-radius: 1.5rem !important;
-    background-color: black !important;
-
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-
-    padding: 10px 20px !important;
-
-    border: none !important;
-
-    transition: all 0.25s ease-in-out !important;
-}
-
-
-/* =========================
-   HOVER EFFECT
-========================= */
-
-button:hover {
-    transform: scale(1.05);
-}
-
-
-/* Dialog Inputs */
-
-[data-testid="stDialog"] input,
-[data-testid="stDialog"] textarea {
-    background-color: white !important;
-
-    color: black !important;
-    -webkit-text-fill-color: black !important;
-}
-
-
-/* Dialog Buttons */
-
-[data-testid="stDialog"] button {
-    background-color: #5865F2 !important;
-
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-}
-
+            button:hover{
+                transform :scale(1.05)}
         </style>  
 
                 """
