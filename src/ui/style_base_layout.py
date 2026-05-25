@@ -60,9 +60,9 @@ def style_base_layout():
             h1 {
                 font-family: 'Poppins' !important;
                 font-size: 4rem !important;
-                line-height:1.1 1important;
+                line-height:1.1 !important;
                 margin-bottom:0rem !important;
-                font-weight:1500
+                font-weight:900 !important
             }
                 
 
