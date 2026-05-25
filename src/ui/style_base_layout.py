@@ -101,6 +101,7 @@ def style_base_layout():
                 border-radius: 1.5rem !important;
                 background-color: black !important;
                 color: white !important;
+                -webkit-text-fill-color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
                 transition: transform 0.25s ease-in-out !important;
