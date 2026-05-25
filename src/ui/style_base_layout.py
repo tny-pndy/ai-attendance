@@ -33,7 +33,7 @@ def style_background_dashboard():
         <style>
 
                 .stApp {
-                    background: #E0E3FF !important;
+                    background: linear-gradient(135deg, #E0EAFC, #CFDEF3) !important;
                 }
 
         </style>  
@@ -44,8 +44,7 @@ def style_background_dashboard():
 def style_base_layout():
     st.markdown("""
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+           @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
                 
          /* Hide Top Bar of streamlit */
@@ -59,22 +58,23 @@ def style_base_layout():
             }
 
             h1 {
-                font-family: 'Climate Crisis', sans-serif !important;
-                font-size: 3.5rem !important;
+                font-family: 'Poppins', sans-serif !important;
+                font-size: 4rem !important;
                 line-height:1.1 1important;
                 margin-bottom:0rem !important;
+                font-weight:1500
             }
                 
 
             h2 {
-                font-family: 'Climate Crisis', sans-serif !important;
-                font-size: 2rem !important;
+                font-family: 'Nunito', sans-serif !important;
+                font-size: 2.5rem !important;
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;
             }
                 
             h3, h4, p {
-                font-family: 'Outfit', sans-serif;    
+                font-family: 'Nunito', sans-serif;    
             }
                 
 
