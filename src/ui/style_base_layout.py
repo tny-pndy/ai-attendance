@@ -33,7 +33,7 @@ def style_background_dashboard():
         <style>
 
                 .stApp {
-                    background: linear-gradient(135deg, #E0EAFC, #CFDEF3) !important;
+                  background: linear-gradient(135deg, #E0EAFC, #CFDEF3) !important;
                 }
 
         </style>  
@@ -43,14 +43,15 @@ def style_background_dashboard():
 
 def style_base_layout():
     st.markdown("""
+        
         <style>
-           @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-                
+        
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+             
          /* Hide Top Bar of streamlit */
                 
             #MainMenu, footer, header {
-                visibility: hidden;
+                visibility: hidden !important;
             }
                 
             .block-container {
@@ -58,23 +59,23 @@ def style_base_layout():
             }
 
             h1 {
-                font-family: 'Poppins' !important;
-                font-size: 4rem !important;
+                font-family:  'Poppins' !important;
+                font-size: 4.5rem !important;
                 line-height:1.1 !important;
                 margin-bottom:0rem !important;
-                font-weight:900 !important
+                font-weight: 900 !important;
             }
                 
 
             h2 {
-                font-family: 'Nunito' !important;
-                font-size: 2.5rem !important;
+                font-family: 'Climate Crisis', sans-serif !important;
+                font-size: 2rem !important;
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;
             }
                 
             h3, h4, p {
-                font-family: 'Nunito';    
+                font-family: 'Outfit', sans-serif;    
             }
                 
 
@@ -111,3 +112,6 @@ def style_base_layout():
 
                 """
             ,unsafe_allow_html=True)
+
+
+
