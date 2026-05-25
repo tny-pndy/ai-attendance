@@ -66,64 +66,97 @@ def style_base_layout():
             }
 
             h1 {
-                font-family:  'Poppins' !important;
-                font-size: 4.5rem !important;
-                line-height:1.1 !important;
-                margin-bottom:0rem !important;
-                font-weight: 900 !important;
-                
-            }
-                
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 4.5rem !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0rem !important;
+    font-weight: 900 !important;
+}
 
-            h2 {
-                font-family: 'Poppins', sans-serif !important;
-                font-size: 2rem !important;
-                line-height:0.9 !important;
-                margin-bottom:0rem !important;
-                -webkit-text-fill-color: black !important;
-            }
-                
-            h3, h4, p {
-                font-family: 'Poppins', sans-serif;   
-                -webkit-text-fill-color: black !important;
-            }
-                
+h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 2rem !important;
+    line-height: 0.9 !important;
+    margin-bottom: 0rem !important;
 
-            button{
-                border-radius: 1.5rem !important;
-                background-color: #5865F2 !important;
-                color: white !important;
-                webkit-text-fill-color: white !important;
-                padding: 10px 20px !important;
-                border: none !important;
-                transition: transform 0.25s ease-in-out !important;
-               
-                }
+    color: black !important;
+    -webkit-text-fill-color: black !important;
+}
 
-            button[kind="secondary"]{
-                border-radius: 1.5rem !important;
-                background-color: #EB459E !important;
-                color: white !important;
-                webkit-text-fill-color:white !important;
-                padding: 10px 20px !important;
-                border: none !important;
-                transition: transform 0.25s ease-in-out !important;
-                
-                }
+h3,
+h4,
+p {
+    font-family: 'Poppins', sans-serif !important;
 
-            button[kind="tertiary"]{
-                border-radius: 1.5rem !important;
-                background-color: black !important;
-                color: white !important;
-                -webkit-text-fill-color: black !important;
-                padding: 10px 20px !important;
-                border: none !important;
-                transition: transform 0.25s ease-in-out !important;
-                
-                }
+    color: black !important;
+    -webkit-text-fill-color: black !important;
+}
 
-            button:hover{
-                transform :scale(1.05)}
+
+/* =========================
+   PRIMARY BUTTON
+========================= */
+
+.stButton > button {
+    border-radius: 1.5rem !important;
+    background-color: #5865F2 !important;
+
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+
+    padding: 10px 20px !important;
+
+    border: none !important;
+
+    transition: all 0.25s ease-in-out !important;
+}
+
+
+/* =========================
+   SECONDARY BUTTON
+========================= */
+
+button[kind="secondary"] {
+    border-radius: 1.5rem !important;
+    background-color: #EB459E !important;
+
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+
+    padding: 10px 20px !important;
+
+    border: none !important;
+
+    transition: all 0.25s ease-in-out !important;
+}
+
+
+/* =========================
+   TERTIARY BUTTON
+========================= */
+
+button[kind="tertiary"] {
+    border-radius: 1.5rem !important;
+    background-color: black !important;
+
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+
+    padding: 10px 20px !important;
+
+    border: none !important;
+
+    transition: all 0.25s ease-in-out !important;
+}
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+button:hover {
+    transform: scale(1.05);
+}
         </style>  
 
                 """
