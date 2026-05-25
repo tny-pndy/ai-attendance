@@ -10,7 +10,7 @@ def style_background_home():
     #0f0c29 0%,
     #302b63 45%,
     #24243e 100%
-    -webkit-text-fill-color: black !important;
+    
     );
                 }
                
@@ -19,7 +19,7 @@ def style_background_home():
                     background-color:#E0E3FF !important;
                     padding:2.5rem !important;
                     border-radius: 5rem !important;
-                    -webkit-text-fill-color: black !important;
+                 
                     }
                     
         </style>  
