@@ -58,7 +58,7 @@ def style_base_layout():
             }
 
             h1 {
-                font-family: 'Poppins', sans-serif !important;
+                font-family: 'Poppins' !important;
                 font-size: 4rem !important;
                 line-height:1.1 1important;
                 margin-bottom:0rem !important;
@@ -67,14 +67,14 @@ def style_base_layout():
                 
 
             h2 {
-                font-family: 'Nunito', sans-serif !important;
+                font-family: 'Nunito' !important;
                 font-size: 2.5rem !important;
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;
             }
                 
             h3, h4, p {
-                font-family: 'Nunito', sans-serif;    
+                font-family: 'Nunito';    
             }
                 
 
@@ -98,8 +98,8 @@ def style_base_layout():
 
             button[kind="tertiary"]{
                 border-radius: 1.5rem !important;
-                background-color: white !important;
-                color: black !important;
+                background-color: black !important;
+                color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
                 transition: transform 0.25s ease-in-out !important;
