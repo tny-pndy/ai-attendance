@@ -12,6 +12,11 @@ def style_background_home():
     #24243e 100%
     );
                 }
+                input,
+                textarea {
+                background-color: white !important;
+                color: black !important;
+                -webkit-text-fill-color: black !important;
 
                 .stApp div[data-testid="stColumn"]{
                     background-color:#E0E3FF !important;
@@ -35,6 +40,12 @@ def style_background_dashboard():
                 .stApp {
                   background: linear-gradient(135deg, #E0EAFC, #CFDEF3) !important;
                 }
+                input,
+                textarea {
+                background-color: white !important;
+                color: black !important;
+                -webkit-text-fill-color: black !important;
+}
 
         </style>  
 
