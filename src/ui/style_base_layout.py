@@ -76,7 +76,7 @@ def style_base_layout():
                 
 
             h2 {
-                font-family: 'Climate Crisis', sans-serif !important;
+                font-family: 'Poppins', sans-serif !important;
                 font-size: 2rem !important;
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;
@@ -84,7 +84,7 @@ def style_base_layout():
             }
                 
             h3, h4, p {
-                font-family: 'Outfit', sans-serif;   
+                font-family: 'Poppins', sans-serif;   
                 -webkit-text-fill-color: black !important;
             }
                 
@@ -96,7 +96,7 @@ def style_base_layout():
                 padding: 10px 20px !important;
                 border: none !important;
                 transition: transform 0.25s ease-in-out !important;
-                -webkit-text-fill-color: black !important;
+               
                 }
 
             button[kind="secondary"]{
