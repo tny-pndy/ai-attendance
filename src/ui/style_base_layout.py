@@ -77,7 +77,7 @@ def style_base_layout():
                 
             h3, h4, p {
                 font-family: 'Outfit', sans-serif;    
-                -webkit-text-fill-color: black !important;
+                
             }
                 
 
@@ -101,7 +101,7 @@ def style_base_layout():
 
             button[kind="tertiary"]{
                 border-radius: 1.5rem !important;
-                background-color: #E0EAFC !important;
+                background-color: black !important;
                 color: white !important;
                 -webkit-text-fill-color: white !important;
                 padding: 10px 20px !important;
