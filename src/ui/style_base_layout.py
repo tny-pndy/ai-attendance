@@ -1,6 +1,4 @@
-
-    import streamlit as st
-
+import streamlit as st
 def style_background_home():
     st.markdown("""
         <style>
