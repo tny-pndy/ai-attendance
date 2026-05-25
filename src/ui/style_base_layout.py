@@ -10,19 +10,18 @@ def style_background_home():
     #0f0c29 0%,
     #302b63 45%,
     #24243e 100%
+    -webkit-text-fill-color: black !important;
     );
                 }
-                input,
-                textarea {
-                background-color: white !important;
-                color: black !important;
-                -webkit-text-fill-color: black !important;
+               
 
                 .stApp div[data-testid="stColumn"]{
                     background-color:#E0E3FF !important;
                     padding:2.5rem !important;
                     border-radius: 5rem !important;
+                    -webkit-text-fill-color: black !important;
                     }
+                    
         </style>  
 
                 """
@@ -39,13 +38,9 @@ def style_background_dashboard():
 
                 .stApp {
                   background: linear-gradient(135deg, #E0EAFC, #CFDEF3) !important;
+                  -webkit-text-fill-color: black !important;
                 }
-                input,
-                textarea {
-                background-color: white !important;
-                color: black !important;
-                -webkit-text-fill-color: black !important;
-}
+               
 
         </style>  
 
@@ -67,6 +62,7 @@ def style_base_layout():
                 
             .block-container {
                 padding-top:1.5rem !important;    
+                -webkit-text-fill-color: black !important;
             }
 
             h1 {
@@ -75,6 +71,7 @@ def style_base_layout():
                 line-height:1.1 !important;
                 margin-bottom:0rem !important;
                 font-weight: 900 !important;
+                -webkit-text-fill-color: black !important;
             }
                 
 
@@ -83,10 +80,12 @@ def style_base_layout():
                 font-size: 2rem !important;
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;
+                -webkit-text-fill-color: black !important;
             }
                 
             h3, h4, p {
-                font-family: 'Outfit', sans-serif;    
+                font-family: 'Outfit', sans-serif;   
+                -webkit-text-fill-color: black !important;
             }
                 
 
@@ -97,6 +96,7 @@ def style_base_layout():
                 padding: 10px 20px !important;
                 border: none !important;
                 transition: transform 0.25s ease-in-out !important;
+                -webkit-text-fill-color: black !important;
                 }
 
             button[kind="secondary"]{
@@ -106,6 +106,7 @@ def style_base_layout():
                 padding: 10px 20px !important;
                 border: none !important;
                 transition: transform 0.25s ease-in-out !important;
+                -webkit-text-fill-color: black !important;
                 }
 
             button[kind="tertiary"]{
@@ -115,6 +116,7 @@ def style_base_layout():
                 padding: 10px 20px !important;
                 border: none !important;
                 transition: transform 0.25s ease-in-out !important;
+                -webkit-text-fill-color: black !important;
                 }
 
             button:hover{
