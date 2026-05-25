@@ -157,6 +157,28 @@ button[kind="tertiary"] {
 button:hover {
     transform: scale(1.05);
 }
+
+
+/* Dialog Inputs */
+
+[data-testid="stDialog"] input,
+[data-testid="stDialog"] textarea {
+    background-color: white !important;
+
+    color: black !important;
+    -webkit-text-fill-color: black !important;
+}
+
+
+/* Dialog Buttons */
+
+[data-testid="stDialog"] button {
+    background-color: #5865F2 !important;
+
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+}
+
         </style>  
 
                 """
