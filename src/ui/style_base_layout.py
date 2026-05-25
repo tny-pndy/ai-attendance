@@ -38,7 +38,7 @@ def style_background_dashboard():
 
                 .stApp {
                   background: linear-gradient(135deg, #E0EAFC, #CFDEF3) !important;
-                  -webkit-text-fill-color: black !important;
+                  
                 }
                
 
@@ -62,7 +62,7 @@ def style_base_layout():
                 
             .block-container {
                 padding-top:1.5rem !important;    
-                -webkit-text-fill-color: black !important;
+               
             }
 
             h1 {
@@ -71,7 +71,7 @@ def style_base_layout():
                 line-height:1.1 !important;
                 margin-bottom:0rem !important;
                 font-weight: 900 !important;
-                -webkit-text-fill-color: black !important;
+                
             }
                 
 
